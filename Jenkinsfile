@@ -6,10 +6,12 @@ pipeline {
             steps {
                 sh 'python3 main.py'
             }
+        }
         stage('click') {
             steps {
                 sh 'python3 click.py'
             }
+        }
         stage('welcome') {
             steps {
                 sh 'python3 welcome.py'
